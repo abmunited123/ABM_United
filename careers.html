@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ABM United Careers Page</title>
-   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="images/aabbmm.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
   <!--Owl-->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"
@@ -116,8 +116,7 @@
         <div class="col-md-7">
           <div class="vertical_center">
             <div class="bannerTxt">
-              <h1>Join us and become a part 
-              of the world of emerging tech!</h1>
+              <h1>Step into the future by joining our team and contributing to cutting-edge solutions in the exciting world of emerging technologies!</h1>
             </div>
           </div>
         </div>
@@ -136,29 +135,12 @@
       </div>
     </div>
   </section>
-  <section class="aboutService pos-rel">
-   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Who are we looking for?</h3>
-        <h4>Some people say that Artificial Intelligence is the future, but at ABM United, we feel that 
-          Human Intelligence is the core that drives every organization.</h4>
-        <p>Technologies and the concurrent solutions are being offered by many organizations,
-           <b>what sets us apart is the service experience.</b></p>
-        <p>We need people who are committed to deliver a service experience along with our 
-          <b>promise of Technology Solutions and Human Intelligence.</b></p>
-        <p>Bring your skills and <b>ideas backed by your ingenuity,</b> commitment and intuition to ABM United.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="sysnetCapability">
+  <section class="sysnetCapability">
  <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h3>These 9 reasons for you to join Our ABM United</h3>
+      <h3>These 5 reasons for you to join Our ABM United</h3>
     </div>
     <div class="col-md-12">
       <div class="carees_slider carees_slider_align owl-carousel  owl-theme">
@@ -178,44 +160,10 @@
           <div class="insideSlide">
             <div class="sysm-box">
               <div class="sysm-icon">
-                <img class="pink-icon" src="svg/icon02.svg">
-                <img class="green-icon" src="svg/icongreen02.svg">
-              </div>
-              <h3>Financial Stability</h3>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="insideSlide">
-            <div class="sysm-box">
-              <div class="sysm-icon">
                 <img class="pink-icon" src="svg/icon03.svg">
                 <img class="green-icon" src="svg/icongreen03.svg">
               </div>
               <h3>Great Clients</h3>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="insideSlide">
-            <div class="sysm-box">
-              <div class="sysm-icon">
-                <img class="pink-icon" src="svg/icon04.svg">
-                <img class="green-icon" src="svg/icongreen04.svg">
-              </div>
-              <h3>Work-Life Balance</h3>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="insideSlide">
-            <div class="sysm-box">
-              <div class="sysm-icon">
-                <img class="pink-icon" src="svg/icon05.svg">
-                <img class="green-icon" src="svg/icongreen05.svg">
-              </div>
-              <h3>Inclusive 
-              Environment </h3>
             </div>
           </div>
         </div>
@@ -253,18 +201,6 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <div class="insideSlide">
-            <div class="sysm-box">
-              <div class="sysm-icon">
-                <img class="pink-icon" src="svg/icon09.svg">
-                <img class="green-icon" src="svg/icongreen09.svg">
-              </div>
-              <h3>Opportunity
-              to Create</h3>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -276,6 +212,26 @@
   </div>
 </div>
 </section>
+
+  <section class="aboutService pos-rel">
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Who are we looking for?</h3>
+        <h4>Some people say that Artificial Intelligence is the future, but at ABM United, we feel that 
+          Human Intelligence is the core that drives every organization.</h4>
+        <p>Technologies and the concurrent solutions are being offered by many organizations,
+           <b>what sets us apart is the service experience.</b></p>
+        <p>We need people who are committed to deliver a service experience along with our 
+          <b>promise of Technology Solutions and Human Intelligence.</b></p>
+        <p>Bring your skills and <b>ideas backed by your ingenuity,</b> commitment and intuition to ABM United.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="cloudPowerBy">
  <div class="container">
@@ -297,7 +253,7 @@
      <div class="col-md-12">
     <h3>Let us know more about you</h3>
       <div class="formsField">
-        <form action="mail.php" method="POST" enctype="multipart/form-data">
+        <form method="POST" id="aform" enctype="multipart/form-data">
           <div class="row">
             <div class="col-md-12">
              <div class="form-group">
@@ -439,80 +395,33 @@
         </div>
       </div>        
     </form> 
+
+    <script>
+      let url ='https://script.google.com/macros/s/AKfycbxZI80wf15gmQTX7Y3c5VlXSkt77zkCDcJIKxsofJfoXGo9kvLlFSGT-AAmUjsPyCUCcg/exec'
+      const form = document.getElementById('aform');
+      form.addEventListener('submit',(e)=>{
+      e.target.action.innerHTML="Submitting...";
+      let data=new FormData(form);
+      fetch(url,{
+        method:'POST',
+        body:data
+      })
+      .then(response=>alert("Form submitted successfully"))
+      .then((finalRes)=>{
+        e.target.action.innerHTML="Submit";
+        form.reset();
+       console.log(finalRes);
+       
+      })
+      e.preventDefault();
+    })
+    </script>
+
   </div>
 </div>
 </div>
 </div>
 </section>
-
-<!-- <section class="our-services">
-  <div class="row">
-
-    <div class="col-md-12">
-      <h3 class="hm-heading">Life at SYSNET</h3>
-      <div class="careers_3d_slider owl-carousel  owl-theme">
-        <div class="item">
-          <img src="images/life-image02.jpg" alt="">
-          <div class="captionsTxt" style="display:none;">
-            <span><img src="images/heart.png" alt=""> 4215 Views /  01 Nov 2022</span>
-            <p>Proud moment for SYSNET! Our Sysnetian Aashish (2nd from Left in Red headgear ) from Team Hughes met PM Modi during his recent visit to Kedarnath.</p>
-            <a href="#">Explore -</a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/life-image03.jpg" alt="">
-          <div class="captionsTxt" style="display:none;">
-           <span><img src="images/heart.png" alt=""> 4215 Views /  01 Nov 2022</span>
-           <p>Proud moment for SYSNET! Our Sysnetian Aashish (2nd from Left in Red headgear ) from Team Hughes met PM Modi during his recent visit to Kedarnath.</p>
-           <a href="#">Explore -</a>
-         </div>
-       </div>
-       <div class="item">
-        <img src="images/life-image04.jpg" alt="">
-        <div class="captionsTxt" style="display:none;">
-          <span><img src="images/heart.png" alt=""> 4215 Views /  01 Nov 2022</span>
-          <p>Proud moment for SYSNET! Our Sysnetian Aashish (2nd from Left in Red headgear ) from Team Hughes met PM Modi during his recent visit to Kedarnath.</p>
-          <a href="#">Explore -</a>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/life-image05.jpg" alt="">
-        <div class="captionsTxt" style="display:none;">
-          <span><img src="images/heart.png" alt=""> 4215 Views /  01 Nov 2022</span>
-          <p>Proud moment for SYSNET! Our Sysnetian Aashish (2nd from Left in Red headgear ) from Team Hughes met PM Modi during his recent visit to Kedarnath.</p>
-          <a href="#">Explore -</a>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/life-image06.jpg" alt="">
-        <div class="captionsTxt" style="display:none;">
-         <span><img src="images/heart.png" alt=""> 4215 Views /  01 Nov 2022</span>
-         <p>Proud moment for SYSNET! Our Sysnetian Aashish (2nd from Left in Red headgear ) from Team Hughes met PM Modi during his recent visit to Kedarnath.</p>
-         <a href="#">Explore -</a>
-       </div>
-       </div>
-        <div class="item">
-        <img src="images/life-image07.jpg" alt="">
-        <div class="captionsTxt" style="display:none;">
-         <span><img src="images/heart.png" alt=""> 4215 Views /  01 Nov 2022</span>
-         <p>Proud moment for SYSNET! Our Sysnetian Aashish (2nd from Left in Red headgear ) from Team Hughes met PM Modi during his recent visit to Kedarnath.</p>
-         <a href="#">Explore -</a>
-       </div>
-       </div>
-        <div class="item">
-        <img src="images/life-image09.jpg" alt="">
-        <div class="captionsTxt" style="display:none;">
-         <span><img src="images/heart.png" alt=""> 4215 Views /  01 Nov 2022</span>
-         <p>Proud moment for SYSNET! Our Sysnetian Aashish (2nd from Left in Red headgear ) from Team Hughes met PM Modi during his recent visit to Kedarnath.</p>
-         <a href="#">Explore -</a>
-       </div>
-     </div> 
-
-   </div>
-   
- </div>
-</div>
-</section> -->
 
 
 <div class="footer-bg">
@@ -583,19 +492,8 @@
             <li><a href="intelligent-automation.html">Intelligent Automation</a></li>
           </ul>
 
-          <!--<ul class="list-unstyled">-->
-          <!--  <li><a href="">Personal Computing Devices</a></li>-->
-          <!--  <li><a href="">Peripherals</a></li>-->
-          <!--  <li><a href="">Network Devices</a></li>-->
-          <!--  <li><a href="">Communication Devices</a></li>-->
-          <!--  <li><a href="">Servers</a></li>-->
-          <!--  <li><a href="">Storage Devices</a></li>-->
-          <!--  <li><a href="">Smart Classroom Devices</a></li>-->
-          <!--</ul>-->
-
           <ul class="list-unstyled">
             <li><a href="about-us.html">About Us</a></li>
-            <!--<li><a href="">Industries</a></li>-->
              <li><a href="careers.html">Careers</a></li>
             <li><a href="case-study.html">Case Studies</a></li>
           </ul>

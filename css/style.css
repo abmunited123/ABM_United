@@ -22,6 +22,10 @@
   font-family:Montserrat-ExtraBold;
   src:url(../fonts/Montserrat-ExtraBold.ttf);
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding:0;
     margin:0;
@@ -29,6 +33,7 @@ body{
     font-size: 16px;
     font-family:Montserrat-Regular;
     color:#1e1e1e;
+
 }
 html.trans-html {
     overflow-x: hidden!important;
